@@ -1,0 +1,221 @@
+.c-banner{    
+
+    position:relative;    
+
+    min-height:100vh;
+
+}
+
+.c-breadcrumb{
+
+    list-style:none;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0;
+
+    margin:0 0 20px;
+
+}
+
+.c-breadcrumb > li{
+
+    font-family:var(--proximanovaBold);
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#FFF;
+
+    position:relative;
+
+}
+
+.c-breadcrumb > li + li{
+
+    padding-left:15px;
+
+    margin-left:10px;
+
+}
+
+.c-breadcrumb > li > a{
+
+    color:#FFF;
+
+}
+
+.c-breadcrumb > li > a:hover{
+
+    color:#29ade3;
+
+}
+
+.c-breadcrumb > li + li:before{
+
+    content:"";
+
+    width:7px;
+
+    height:14px;
+
+    position:absolute;
+
+    left:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    background:url('../images/left-arrow-icon.svg') no-repeat center;
+
+}
+
+
+
+.c-banner:before{
+
+    content:"";
+
+    width:100%;
+
+    height:100%;
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    background:url('../images/bannernew.png') no-repeat top center;
+
+    background-size:cover;
+
+}
+
+.c-banner__caption{
+
+    width:100%;
+
+    max-width:680px;
+
+    height:100%;
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    right:0;
+
+    margin:0 auto;
+
+    z-index:99;
+
+    text-align:center;
+
+}
+
+
+
+.c-banner h1{
+
+    font-family:var(--proximanovaBold);
+
+    font-size:72px;
+
+    font-weight:700;
+
+    color:#FFF;
+
+    margin:0 0 15px;
+
+}
+
+.c-banner p{
+
+    font-family:var(--proximanovaSemiBold);
+
+    font-size:20px;
+
+    font-weight:400;
+
+    color:#FFF;
+
+}
+
+
+
+/**/
+
+
+
+@media (max-width: 1199.98px) {
+
+    .c-banner {
+
+        position: relative;
+
+        /*min-height: 50vh;*/
+
+    }
+
+    .c-banner h1 {
+
+        font-size: 52px;
+
+    }
+
+    .c-banner p {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+
+
+
+@media (max-width: 991.98px) {
+
+    .c-banner{
+
+        min-height:560px;
+
+    }
+
+    .c-banner__caption{
+
+        padding:0 15px;
+
+    }
+
+    .c-banner h1 {
+
+        font-size: 32px;
+
+        margin: 0 0 5px;
+
+    }
+
+    .c-breadcrumb {
+
+        margin: 0 0 10px;
+
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    .c-banner:before {
+        background: url(../images/mobilebanner.png) no-repeat bottom center;
+        background-size: cover;
+    }
+
+}
